@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jokempô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="conteiner-1">
+
+        <h1>jokenpô do patolino</h1>
+
+        <div class="conteiner-2">
+            <div class="label bg-green">voçê</div>
+            <div class="label bg-red">patolino</div>
+            <div id="contador" class="placar">
+                0:0
+            </div>
+        </div>
+
+        <div class="conteiner3">
+            <span id="result"></span>
+            <br>
+            <image id="image" src="./assets/patolino-pensativo.png" />
+        </div>
+
+        <div class="button">
+            <button id="stone" onclick="playYour('stone')">&#x1F44A;</button>
+            <button id="paper" onclick="playYour('paper')">&#x270B;</button>
+            <button id="scissors" onclick="playYour('scissors')">&#x270C;</button>
+        </div>
+    </div>
+
+    <div id="winner" class="conteiner end-screen none">
+        <img id="premiu" src="./assets/trofeu-removebg-preview (1).png">
+        <h2>voçê venceu</h2>
+        <button class="recomeçar" onclick="newGame()">joga novamente</button>
+    </div>
+    <div id="loser" class="conteiner end-screen none">
+        <img id="emoji" src="assets/patolino-debochado.png">
+        <h3>voçê perdeu</h3>
+        <button class="recomeçar-2" onclick="newGame()">joga novamente</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
